@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nyades FT — VRChat용 데스크톱 페이스 트래킹</title>
+<meta name="description" content="Nyades FT: 일반 웹캠으로 VRChat 페이스 트래킹.">
+<link rel="alternate" hreflang="ja" href="https://nyades.booth.pm/items/8922059">
+<style>
+  :root { --bg: #f4f5f7; --card: #fff; --text: #222; --muted: #757575; --line: #e5e5e5; --accent: #fc4d50; --accent-hover: #e8383b; --link: #0096fa; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #16171a; --card: #202227; --text: #e8e8ea; --muted: #9a9ca3; --line: #33353c; --link: #5cb8ff; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 14px/1.8 "Segoe UI", "Hiragino Kaku Gothic ProN", "Malgun Gothic", Meiryo, sans-serif; }
+  .bar { position: sticky; top: 0; z-index: 1; background: color-mix(in srgb, var(--card) 94%, transparent); backdrop-filter: blur(8px); border-bottom: 1px solid var(--line); }
+  .bar-inner { max-width: 760px; margin: 0 auto; padding: 10px 16px; display: flex; align-items: center; gap: 12px; }
+  .brand { font-weight: 700; font-size: 15px; margin-right: auto; white-space: nowrap; }
+  .langs { display: flex; gap: 2px; font-size: 13px; flex-wrap: wrap; }
+  .langs a, .langs span { padding: 4px 8px; border-radius: 4px; color: var(--muted); text-decoration: none; white-space: nowrap; }
+  .langs span { color: var(--text); background: var(--bg); font-weight: 600; }
+  .langs a:hover { color: var(--text); }
+  .booth { display: inline-flex; align-items: center; gap: 6px; background: var(--accent); color: #fff; text-decoration: none; font-weight: 700; font-size: 13px; padding: 8px 14px; border-radius: 6px; white-space: nowrap; }
+  .booth:hover { background: var(--accent-hover); }
+  .booth.large { font-size: 15px; padding: 12px 22px; }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 24px 16px 64px; }
+  .card { background: var(--card); border-radius: 6px; padding: 24px; margin-bottom: 16px; }
+  h1 { font-size: 22px; line-height: 1.5; margin: 0 0 12px; }
+  .hero-actions { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+  .price { color: var(--accent); font-size: 20px; font-weight: 700; }
+  .text { white-space: pre-wrap; overflow-wrap: anywhere; margin: 0; }
+  h2 { font-size: 18px; margin: 0 0 16px; padding-bottom: 8px; border-bottom: 1px solid var(--line); }
+  a { color: var(--link); }
+  .video { position: relative; aspect-ratio: 16 / 9; border-radius: 4px; overflow: hidden; background: #000; }
+  .video iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+  .back { text-align: center; }
+  .back p { margin: 0 0 12px; color: var(--muted); }
+  @media (max-width: 560px) { .brand { display: none; } .bar-inner { justify-content: space-between; } .bar .booth { padding: 8px 10px; } }
+</style>
+</head>
+<body>
+<header class="bar"><div class="bar-inner">
+  <div class="brand">Nyades FT</div>
+  <nav class="langs" aria-label="Language">
+    <a href="https://nyades.booth.pm/items/8922059" lang="ja">日本語</a>
+    <a href="../en/" lang="en">English</a>
+    <a href="../ru/" lang="ru">Русский</a>
+    <span aria-current="page">한국어</span>
+  </nav>
+  <a class="booth" href="https://nyades.booth.pm/items/8922059">BOOTH에서 열기 ↗</a>
+</div></header>
+
+<main class="wrap">
+
+<section class="card">
+<h1>Nyades FT — VRChat용 데스크톱 페이스 트래킹</h1>
+<div class="hero-actions">
+  <span class="price">¥ 800</span>
+  <a class="booth large" href="https://nyades.booth.pm/items/8922059">BOOTH에서 열기 ↗</a>
+</div>
+</section>
+
+<section class="card"><p class="text">▍Nyades FT란
+웹캠 하나로 VRChat에 당신의 표정을.
+
+Nyades FT는 Windows PC에 연결된 웹캠으로 얼굴 움직임을 읽고, OSC를 통해 표정 파라미터를 VRChat에 직접 전송합니다. VRCFT 형식의 파라미터를 따르므로 페이스 트래킹이 설정된 아바타에서 바로 사용할 수 있습니다. VRCFaceTracking을 실행할 필요가 없습니다.
+
+지원 플랫폼: Windows 10 / 11 (x64), Linux β (x86_64 AppImage, WebKitGTK 4.1 필요)
+
+▍주요 기능
+✔ 표정뿐 아니라 시선과 혀도 트래킹
+✔ Windows에서 GPU 가속 (카메라·얼굴·혀 처리마다 Auto, CPU, GPU 선택)
+✔ 캘리브레이션으로 어떤 얼굴에서도 완벽한 표정 캡처. 자동·수동 모드, 파라미터별 여러 캡처 모드, 스무딩과 대칭, 그리고 고급 사용자를 위한 노드 방식 Expression Mapping 에디터.
+✔ VRChat Open Beta의 Native Face Tracking 지원
+✔ 영상은 PC에서 처리되며 업로드되지 않습니다
+✔ 인터페이스 색상 커스터마이즈 (프리셋 6종, 컬러 피커). 덤으로 미리보기에 고양이 귀도 표시할 수 있습니다. 둘 다 Nyades FT의 외형만 바꾸며 VRChat 아바타에는 영향을 주지 않습니다.</p></section>
+
+<section class="card"><div class="video"><iframe src="https://www.youtube-nocookie.com/embed/N4pnXbEGkWM" title="동영상 1" loading="lazy" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div></section>
+<section class="card"><div class="video"><iframe src="https://www.youtube-nocookie.com/embed/dPefojhnw6M" title="동영상 2" loading="lazy" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div></section>
+
+<section class="card"><h2>시작하기</h2><p class="text">▍필요한 것
+・웹캠
+・VRCFT (Unified Expressions) 또는 VRChat Native Face Tracking을 지원하는 아바타 (Nyades FT는 아바타를 설정하지 않습니다)
+
+▍처음 사용하기
+① ZIP을 다운로드하고 압축을 풉니다.
+② 압축을 푼 exe를 실행합니다.
+③ 카메라를 선택하고 얼굴이 화면에 보이도록 합니다.
+④ VRChat에서 OSC를 켜고 호환되는 아바타를 선택합니다.
+⑤ 정면을 보고 얼굴의 힘을 뺀 뒤 「무표정 저장」을 누릅니다. 이어서 「시선 중앙 맞추기」로 시선을 조정합니다. 필요하면 표정 파라미터를 직접 보정하세요.
+
+※ 업데이트는 앱 안에서 설치할 수 있습니다 (톱니바퀴 → 업데이트).
+
+▍VRChat 상체 카메라 트래킹과 함께 사용하기
+머리·상체·손도 움직이려면 아래 중 하나를 설정하세요. 가상 카메라(방법 1)를 추천합니다:
+✓ VRChat 자체 얼굴 인식이 Nyades FT의 페이스 트래킹 위에 표정을 겹치지 않습니다
+✓ 얼굴이 마스크로 가려져 VRChat에 맨얼굴이 보이지 않습니다
+✓ Windows 설정을 바꿀 필요가 없습니다
+
+▶ 방법 1 — 가상 카메라 (추천·실험적)
+　① Nyades FT
+　　└ 입력 카메라로 실제 웹캠을 선택
+　　└ 설정 → 「가상 카메라 (OBS, 실험적)」 → 「설치 및 활성화」
+　② VRChat
+　　└ 설정 → 트래킹 및 IK → 카메라로 「OBS Virtual Camera」 선택
+　　└ 「Selfie Expression 활성화」를 켭니다
+
+▶ 방법 2 — 카메라 동시 사용 허용
+　가상 카메라가 잘 동작하지 않을 때 사용하세요.
+　① Windows 설정
+　　└ Bluetooth 및 장치 → 카메라 → 사용할 카메라
+　　└ 고급 카메라 옵션 → 편집
+　　└ 「여러 앱의 카메라 동시 사용 허용」을 켬 → 적용
+　② VRChat
+　　└ 메인 메뉴 → 설정 → 트래킹 및 IK
+　　└ 「Selfie Expression 활성화」를 켭니다
+
+→ 손 트래킹은 어느 방법이든 「Selfie Expression Also Moves Hands」를 켜세요.
+
+※ 카메라를 사용할 수 없다면 Windows의 카메라 권한과 다른 앱이 사용 중인지 확인하세요.</p></section>
+
+<section class="card"><h2>구성</h2><p class="text">・Windows (ZIP): Nyades FT-Support.exe
+・Linux β (ZIP): AppImage
+・Security_Certificate.zip: 서명용 인증서</p></section>
+
+<section class="card"><h2>업데이트 내역</h2><p class="text">■ V6.2.2 (Windows) 2026/10/28 (최신)
+・Windows 사용자 이름에 일본어·중국어 등 영문 이외의 문자가 포함되어 있으면 트래킹이 시작되지 않던 문제를 수정했습니다.
+
+■ V6.2.1 (Windows) 2026/10/27
+・카메라 검색과 시작 처리를 개선해, 응답하지 않는 카메라가 있어도 화면이나 다른 카메라 목록이 멈추지 않습니다.
+・새 카메라를 연결하면 전환할지 묻습니다.
+・업데이트 채널에 「끄기」를 추가해 자동 업데이트 확인을 끌 수 있습니다.
+・가상 카메라 출력 (OBS, 실험적)을 추가했습니다. 설정은 「시작하기」의 방법 1을 참고하세요.
+
+■ Linux β2 (Linux) 2026/10/26
+・카메라 미리보기가 검은 화면으로 남던 문제를 수정했습니다.
+
+■ Linux β1 (Linux) 2026/10/25
+・Linux x86_64 베타를 공개했습니다. ZIP을 풀고 AppImage에 실행 권한을 준 뒤 실행하세요.
+・트래커와 모델이 포함되어 있어 Python이 필요 없습니다.
+・V4L2 카메라 입력과 CPU 기반 얼굴·혀 추론을 지원합니다. GPU 추론은 Windows에서만 지원합니다.
+・AppImage는 앱 내 업데이트를 지원합니다.
+・VRChat은 Proton으로 실행하고 OSC를 켜 주세요.
+
+■ V6.2 (Windows) 2026/10/17
+・캘리브레이션이 Unified Expressions에서 MediaPipe 파라미터로 옮겨졌습니다. 이전 버전의 캘리브레이션은 적용되지 않지만 보존되므로, 이전 버전으로 되돌리면 다시 사용할 수 있습니다.
+・캘리브레이션: 좌우 연동 (L = R / L ≠ R), 오버라이드, 입력값 표시.
+・「무표정 저장」으로 현재 얼굴에서 캘리브레이션 최솟값을 설정합니다.
+・파라미터별 모델 / 메시 (메시는 실험적), 대칭, 스무딩.
+・혀가 기본으로 켜집니다. 얼굴 값은 혀 처리를 기다리지 않고 전송됩니다.
+・VRCFT 호환: 이전 방식·바이너리 파라미터, Native Full Face Tracking.
+・FT 버튼: 끄면 아바타가 무표정으로 돌아갑니다.
+・처리 장치: 카메라 캡처, MediaPipe, 혀에 Auto / CPU / GPU.
+・새 설정: 인터페이스 배율, 사용하지 않을 때 절전, 하드웨어 가속, 친숙한 이름.
+・디버그 성능 표시: 처리 지연과 메모리 사용량.
+・베타 채널과 이전 버전으로 되돌리기.
+・「모든 설정 초기화」가 「모든 앱 데이터 삭제」로 바뀌었습니다.
+・새 화면 구성과 관련 파라미터 강조 표시.
+
+■ V6.1 (Windows) 2026/10/03
+・BOOTH에서 배포를 시작했습니다.
+・미리보기의 고양이 귀와 인터페이스 색상 테마를 추가했습니다.</p></section>
+
+<section class="card"><h2>주의사항 및 문의</h2><p class="text">▍구매 전에
+・동작은 카메라, 조명, PC 성능, 아바타 설정 등 환경에 따라 다릅니다. 「시작하기」의 「필요한 것」을 확인해 주세요.
+・디지털 상품이므로 구매 후 반품·환불은 불가능합니다.
+
+▍이용 조건
+・재배포, 판매, 수정본 배포를 금지합니다.
+・이 소프트웨어 사용으로 발생한 어떠한 손해에 대해서도 제작자는 책임지지 않습니다.
+・내용은 예고 없이 변경될 수 있습니다.
+・무료 버전 배포는 종료되었습니다. 이미 받은 무료 버전은 계속 사용할 수 있습니다.
+
+▍문의
+버그나 궁금한 점은 BOOTH 메시지 또는 Discord로 편하게 연락해 주세요.
+Discord ▶ <a href="https://discord.gg/wFjynVpjX8">https://discord.gg/wFjynVpjX8</a>
+
+※ 버그를 알려 주실 때 오류 화면 스크린샷을 함께 보내 주시면 큰 도움이 됩니다.
+
+Nyades FT를 이용해 주셔서 감사합니다.
+
+Special thanks:
+Celaline for testing and feedback &lt;3
+Морковка за продвижение &lt;3</p></section>
+
+<section class="card back">
+<p>구매, 다운로드, 일본어 페이지는 BOOTH에 있습니다.</p>
+<a class="booth large" href="https://nyades.booth.pm/items/8922059">BOOTH로 돌아가기 ↗</a>
+</section>
+
+</main>
+</body>
+</html>
