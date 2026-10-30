@@ -34,7 +34,7 @@
 
   .text { overflow-wrap: break-word; }
   @media(max-width:560px) { .bar-inner {flex-wrap:wrap;} .langs {flex:1;} .card {padding:20px;} }
-</style></head><body><header class="bar"><div class="bar-inner"><div class="brand">BodyPen</div><nav class="langs" aria-label="Language"><a href="https://nyades.booth.pm/items/9030536" lang="ja">日本語</a><a href="../en/" lang="en">English</a><a href="../ru/" lang="ru">Русский</a><span aria-current="page">한국어</span></nav><a class="booth" href="https://nyades.booth.pm/items/9030536">BOOTH에서 보기 ↗</a></div></header>
+</style></head><body><header class="bar"><div class="bar-inner"><div class="brand">BodyPen</div><nav class="langs" aria-label="Language"><a href="../en/" lang="en">EN</a><a href="https://nyades.booth.pm/items/9030536" lang="ja">日本語</a><span aria-current="page">한국어</span><a href="../ru/" lang="ru">RU</a></nav><a class="booth" href="https://nyades.booth.pm/items/9030536">BOOTH에서 보기 ↗</a></div></header>
 <main class="wrap"><section class="card"><h1>BodyPen — VRChat 아바타에 손가락으로 그림 그리기</h1><a class="booth large" href="https://nyades.booth.pm/items/9030536">BOOTH에서 보기 ↗</a></section><section class="card"><p class="text">손가락으로 아바타에 직접 그려 보세요.
 
 BodyPen은 VRChat 아바타의 몸과 의상 표면에 그림을 그리는 기믹입니다. 머리 옆 팔레트를 터치해 색을 고르고 검지로 그릴 수 있습니다. 지우개로 일부를 지우거나 메뉴에서 전체 그림을 지울 수 있습니다.
@@ -70,10 +70,20 @@ Windows PC / PC VR용입니다. Material Contacts를 지원하는 클라이언�
 • UV0와 삼각형 서브메시가 있는 대상 메시. MeshRenderer와 SkinnedMeshRenderer를 지원합니다.
 
 테스트 버전: SDK 3.10.6-beta.2 / Modular Avatar 1.19.0-alpha.2 / NDMF 1.15.0-beta.2. 이는 개발 환경 버전이며 이전 안정 버전의 호환성을 보장하지 않습니다. Material Contacts가 없으면 패키지 관리 도구에서 프리릴리스 표시를 켜고 Base와 Avatars를 모두 업데이트해 주세요.</p></section><section class="card"><h2>설치 및 사용 방법</h2><p class="text">1. 다운로드한 ZIP을 풀고 아바타 프로젝트에 unitypackage를 임포트합니다.
-2. BodyPen.prefab을 아바타 아래에 배치합니다. 또는 아바타를 선택한 뒤 Tools → Nyades → BodyPen → Add to selected avatar를 실행합니다.
-3. Inspector의 Meshes 목록에 그릴 메시를 1~16개 추가합니다.
-4. 머리를 기준으로 팔레트 위치를 맞추고 7가지 색상, 브러시 크기, 지우개 크기를 설정합니다. 빌드 시 팔레트가 Head 본을 따라갑니다.
-5. 일반 VRChat SDK 절차로 빌드 및 업로드한 뒤 호환되는 클라이언트에서 확인합니다.
+2. VRChat SDK 3.10.6 이상을 설치합니다(촬영 시점에는 베타). Gesture Manager는 선택 사항입니다.
+3. “Hierarchy”에서 아바타를 우클릭하고 메뉴에서 “BodyPen”을 선택합니다. (또는 Tools → Nyades → BodyPen → Add to selected avatar.)
+4. “Palette” 오브젝트를 선택하고 원하는 신체 부위 위치로 옮깁니다.
+5. 팔레트가 따라갈 본을 선택합니다. 기본값은 “Head”입니다.
+6. “BodyPen” 프리팹을 선택하고 “대상 메시”를 엽니다.
+7. 그리고 싶은 메시를 추가합니다. 먼저 얼굴 메시를 추가하세요.
+8. 메시의 일부만 그릴 수 없게 할 수 있습니다. 예를 들어 “body_options”는 표정 효과용이므로 꺼서 그려지지 않게 합니다.
+9. 눈을 보호하려면 “마스크”를 켜고 “검정”을 선택한 뒤 그리고 싶지 않은 부분을 클릭합니다. 해당 부분이 빨갛게 표시됩니다. “편집”을 클릭하면 마스크 편집이 끝납니다.
+10. 나머지 메시(몸, 의상, 머리카락 등, 최대 16개)를 추가합니다.
+11. “브러시”에서 “Play Mode에서 테스트”를 클릭해 선택한 메시에 그려 보며 브러시 설정을 조정합니다.
+12. “색상 팔레트”에서 색상을 조정합니다.
+13. Play Mode에서 바꾼 값을 유지하려면 “Unity Play Mode”의 “컴포넌트에 값 저장”을 켭니다.
+14. “페인트 머티리얼”에서 페인트의 외형, 지속 시간, 텍스처를 바꿀 수 있습니다.
+15. 준비 완료! 아바타를 빌드·업로드하고 그려 보세요.
 
 검지로 팔레트를 터치해 색상이나 지우개를 선택하고 대상 메시를 터치합니다. 메뉴에서 그리기 권한, Clear, Hide palette를 사용할 수 있습니다. 다른 사용자와 상호작용하려면 VRChat의 해당 Contact 권한도 켜 주세요.</p></section><section class="card"><h2>호환성 및 제한 사항</h2><p class="text">• 도구와 제어 파라미터는 동기화되지만 페인트 기록은 각 클라이언트에서 따로 누적됩니다. 나중에 입장한 사용자는 이전 그림을 받지 못합니다. 픽셀 단위로 동일한 이미지 동기화는 제공하지 않습니다.
 • UV 경계, 의상, 셰이더, 카메라 구성에 따라 결과가 달라질 수 있으므로 아바타별 조정이 필요합니다.
