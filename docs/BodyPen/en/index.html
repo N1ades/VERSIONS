@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>BodyPen — Finger painting for VRChat avatars</title><meta name="description" content="Paint directly on your avatar with your finger.">
+<title>Nyades - BodyPen</title><meta name="description" content="Paint directly on your avatar in VRChat.">
 <link rel="canonical" href="https://n1ades.github.io/VERSIONS/BodyPen/en/"><link rel="alternate" hreflang="ja" href="https://nyades.booth.pm/items/9030536"><link rel="alternate" hreflang="en" href="https://n1ades.github.io/VERSIONS/BodyPen/en/"><link rel="alternate" hreflang="ru" href="https://n1ades.github.io/VERSIONS/BodyPen/ru/"><link rel="alternate" hreflang="ko" href="https://n1ades.github.io/VERSIONS/BodyPen/ko/"><style>
   :root { --bg: #f4f5f7; --card: #fff; --text: #222; --muted: #757575; --line: #e5e5e5; --accent: #fc4d50; --accent-hover: #e8383b; --link: #0096fa; }
   @media (prefers-color-scheme: dark) {
@@ -34,68 +34,47 @@
 
   .text { overflow-wrap: break-word; }
   @media(max-width:560px) { .bar-inner {flex-wrap:wrap;} .langs {flex:1;} .card {padding:20px;} }
-</style></head><body><header class="bar"><div class="bar-inner"><div class="brand">BodyPen</div><nav class="langs" aria-label="Language"><span aria-current="page">EN</span><a href="https://nyades.booth.pm/items/9030536" lang="ja">日本語</a><a href="../ko/" lang="ko">한국어</a><a href="../ru/" lang="ru">RU</a></nav><a class="booth" href="https://nyades.booth.pm/items/9030536">Open on BOOTH ↗</a></div></header>
-<main class="wrap"><section class="card"><h1>BodyPen — Finger painting for VRChat avatars</h1><a class="booth large" href="https://nyades.booth.pm/items/9030536">Open on BOOTH ↗</a></section><section class="card"><p class="text">Paint directly on your avatar with your finger.
 
-BodyPen adds surface painting to your VRChat avatar’s body and clothing. Touch the palette near your head to choose a color, draw with your index finger, then erase part of the drawing or clear it from the menu.
+  h3 { font-size: 15px; margin: 20px 0 6px; }
+  h3:first-of-type { margin-top: 0; }
+</style></head><body><header class="bar"><div class="bar-inner"><div class="brand">Nyades - BodyPen</div><nav class="langs" aria-label="Language"><span aria-current="page">EN</span><a href="https://nyades.booth.pm/items/9030536" lang="ja">日本語</a><a href="../ko/" lang="ko">한국어</a><a href="../ru/" lang="ru">RU</a></nav><a class="booth" href="https://nyades.booth.pm/items/9030536">Open on BOOTH ↗</a></div></header>
+<main class="wrap"><section class="card"><h1>Nyades - BodyPen</h1><a class="booth large" href="https://nyades.booth.pm/items/9030536">Open on BOOTH ↗</a></section><section class="card"><p class="text"><strong>FIRST DAY SALE: 40% OFF until Nov 1 (JST)</strong>
 
-Windows PC / PC VR. Requires a compatible Material Contacts client and SDK. The tested setup uses VRChat Open Beta; check the requirements before purchase.
+Paint directly on your avatar in VRChat.
 
-<strong>First day sale: ¥1,200 until November 1 (JST). Regular price ¥2,000 afterwards.</strong></p></section><section class="card"><h2>Features</h2><p class="text">■ Drawing
-✔ Draw with your finger on your own avatar and on other people's avatars that have BodyPen.
-✔ Others don&#x27;t need BodyPen to see your drawings or to draw on you.
-✔ Draw together: up to 8 touches at once.
+BodyPen adds surface painting to your VRChat avatar’s body and clothing. Touch the palette to choose a color, draw with your index finger or compatible contact, then erase part of the drawing or clear it from the menu.</p></section><section class="card"><h2>Features</h2><p class="text">■ Drawing
+✔ Draw with your finger or a compatible contact on your own avatar and on other avatars with BodyPen.
+✔ Works for strangers too: other players don&#x27;t need BodyPen to see drawings or to draw on your avatar.
+✔ Draw together: up to 8 simultaneous touch points.
 
 ■ Control
-✔ Decide who can draw and who can use the palette, for yourself and for others. VRChat Contact permissions also apply.
-✔ Pick the meshes that can be drawn on (up to 16) and mask the parts you want to protect.
-✔ Erase with the eraser, or clear everything from the menu. If you hide the palette, you can still pick colors and draw from the menu.
+✔ Manage permissions: who can draw and which contacts are accepted.
+✔ Mask the areas you want to protect.
+✔ Easy setup: works through NDMF and Modular Avatar.
+✔ Interface in English, 日本語, 한국어 and Русский.
 
 ■ Paint
-✔ Change the colors, brush size and how the paint looks.
-✔ <strong>Lifetime</strong>: the paint fades away after a while.
-✔ Use it in your own shaders: add it to any material that supports textures.
-✔ <strong>Spray Droplets</strong>: droplets run down while the line stays.
+✔ Customize colors, brush size and paint properties.
+✔ <strong>Lifetime</strong>: the paint fades away over time.
 ✔ <strong>Physical Gravity Flow</strong>: the paint itself runs down the surface.
+✔ Custom shader support: add it to any material that supports textures.
 
 ■ Experimental
-✔ <strong>Per-player color wheel</strong>: every painter gets their own color, brightness, brush size and eraser. Keep Lifetime and Physical Gravity Flow off for this.
-✔ Adjust performance: use high quality on VeryPoor avatars, or the lightest settings to stay within Good.
-
-■ Setup
-✔ Easy setup: your original meshes and materials stay as they are, and NDMF and Modular Avatar set everything up when you build.
-✔ The interface is available in English, 日本語, 한국어 and Русский.</p></section><section class="card"><h2>Requirements</h2><p class="text">• Windows PC / PC VR; Built-in Render Pipeline. Quest / Android is unsupported.
-• Unity 2022.3.22f1.
-• VRChat Base and Avatars SDK with Material Contacts, Modular Avatar and NDMF.
-• A compatible VRChat client. The tested configuration uses Open Beta.
-• Target meshes with UV0 and triangle submeshes. MeshRenderer and SkinnedMeshRenderer are supported.
-
-Tested: SDK 3.10.6-beta.2 / Modular Avatar 1.19.0-alpha.2 / NDMF 1.15.0-beta.2. These are the development environment versions, not a promise of support for older stable versions. If Material Contacts is missing, enable prerelease packages and update both Base and Avatars.</p></section><section class="card"><h2>Setup and use</h2><p class="text">1. Extract the downloaded ZIP and import the unitypackage into your avatar project.
-2. Install VRChat SDK 3.10.6 or newer (beta at the time of recording). Gesture Manager is optional.
-3. Right-click your avatar in the “Hierarchy” and choose “BodyPen” from the menu. (Alternatively: Tools → Nyades → BodyPen → Add to selected avatar.)
+✔ <strong>Per-player color</strong>: every painter gets their own color, brightness, brush size and eraser.
+✔ Tune performance: high quality on VeryPoor avatars, or maximum optimization for Good.</p></section><section class="card"><h2>Requirements</h2><p class="text">• VRChat SDK 3.10.6 or newer
+• Modular Avatar</p></section><section class="card"><h2>Setup and use</h2><h3>Install</h3><p class="text">1. Extract the downloaded ZIP and import the unitypackage into your avatar project.
+2. Install VRChat SDK 3.10.6 or newer (beta at the time of release). Gesture Manager or Av3Emulator is recommended.</p><h3>Add BodyPen and place the palette</h3><p class="text">3. Right-click your avatar in the “Hierarchy” and choose “BodyPen” from the menu.
 4. Select the “Palette” object and move the palette to your preferred body part.
-5. Choose which bone the palette follows. The default is “Head”.
-6. Select the “BodyPen” prefab and open “Meshes”.
-7. Add the meshes you want to draw on. Start with the face mesh.
-8. You can turn off drawing on parts of a mesh. For example, “body_options” is used for facial effects; turn it off so it cannot be drawn on.
-9. To protect the eyes, enable “Mask”, choose “Black” and click the areas where you don’t want paint. Those areas turn red. Click “Edit” to leave mask editing.
-10. Add the remaining meshes: body, clothing and hair (up to 16).
-11. Under “Brush”, click “Test in Play Mode”, draw on the selected meshes and adjust the brush settings.
+5. Choose which bone the palette follows in the “MA Bone Proxy”. The default is “Head”.</p><h3>Choose the meshes</h3><p class="text">6. Select “Meshes” in the “BodyPen” prefab.
+7. Drop here the meshes you want to draw on.
+8. You can exclude some material slots from drawing.
+9. To exclude UV islands or geometry, enable “Mask”, choose “Black” and click the areas where you don’t want paint. Those areas turn red.
+10. Click “Edit” to leave mask editing.</p><h3>Adjust the brush and colors</h3><p class="text">11. Under “Brush”, click “Test in Play Mode”, test drawing on the avatar in Game view and adjust the brush settings.
 12. Adjust the colors under “Color palette”.
 13. To keep changes made in Play Mode, enable “Save values to component” under “Unity Play Mode”.
-14. Under “Paint Material”, change how the paint looks, how long it stays, and its texture.
-15. You’re ready! Build and upload your avatar and start drawing.
-
-Touch the palette with an index finger to select a color or eraser, then touch a configured mesh. Use the menu for drawing permissions, Clear and Hide palette. To interact with others, also enable the relevant VRChat Contact permissions.</p></section><section class="card"><h2>Compatibility and limitations</h2><p class="text">• Tool and control parameters sync, but each client accumulates its own ink history. Late joiners do not receive previous drawings. Pixel-identical image synchronization is not provided.
-• UV seams, clothing, shaders and camera configurations can affect results; adjust the setup per avatar.
-• Extra captures and GPU memory are required. Performance selects one shared atlas at 1024 / 2048 / 4096 / 8192. Lifetime and Physical Gravity Flow require an additional ink buffer.
-• Mirrors are supported. Orthographic and VRChat photo/UI cameras are excluded from paint processing.
+14. Under “Paint Material”, change how the paint looks, how long it stays, and its texture.</p></section><section class="card"><h2>Compatibility and limitations</h2><p class="text">• Each client accumulates its own ink history. Late joiners do not receive previous drawings.
 • Identical avatar copies may interfere through shared shader transport names.
-• Compatibility with all avatars, shaders, stable clients or older SDKs is not guaranteed.</p></section><section class="card"><h2>Included</h2><p class="text">BodyPen prefab, compiled DLLs, paint shaders and English/Japanese guides.
-
-Avatar models and clothing are not included. This is not a source-code distribution.</p></section><section class="card"><h2>Changelog</h2><p class="text">1.0.0 — First release</p></section><section class="card"><h2>Terms and support</h2><p class="text">For the purchaser’s own VRChat avatars. Redistribution, sharing and resale of the tool, installed files, unitypackage or DLLs are prohibited. Third-party avatar, clothing and shader terms also apply.
-
-If a distributed build is disabled, download a current copy from the official product page.
+• Compatibility with all avatars, shaders, stable clients or older SDKs is not guaranteed. In case of errors, contact me on BOOTH or Discord.</p></section><section class="card"><h2>Changelog</h2><p class="text">1.0.0 — First release</p></section><section class="card"><h2>Terms and support</h2><p class="text">For the purchaser’s own VRChat avatars. Redistribution, sharing and resale of the tool, installed files, unitypackage or DLLs are prohibited. Third-party avatar, clothing and shader terms also apply.
 
 Contact the shop through BOOTH messages or Discord. Include Unity, SDK and BodyPen versions and a screenshot of the error.</p><p>Discord: <a href="https://discord.gg/wFjynVpjX8">discord.gg/wFjynVpjX8</a></p></section>
 <section class="card back"><p>Purchases and downloads are available on BOOTH.</p><a class="booth large" href="https://nyades.booth.pm/items/9030536">Open on BOOTH ↗</a></section></main></body></html>
