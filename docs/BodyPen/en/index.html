@@ -34,7 +34,7 @@
 
   .text { overflow-wrap: break-word; }
   @media(max-width:560px) { .bar-inner {flex-wrap:wrap;} .langs {flex:1;} .card {padding:20px;} }
-</style></head><body><header class="bar"><div class="bar-inner"><div class="brand">BodyPen</div><nav class="langs" aria-label="Language"><a href="https://nyades.booth.pm/items/9030536" lang="ja">日本語</a><span aria-current="page">English</span><a href="../ru/" lang="ru">Русский</a><a href="../ko/" lang="ko">한국어</a></nav><a class="booth" href="https://nyades.booth.pm/items/9030536">Open on BOOTH ↗</a></div></header>
+</style></head><body><header class="bar"><div class="bar-inner"><div class="brand">BodyPen</div><nav class="langs" aria-label="Language"><span aria-current="page">EN</span><a href="https://nyades.booth.pm/items/9030536" lang="ja">日本語</a><a href="../ko/" lang="ko">한국어</a><a href="../ru/" lang="ru">RU</a></nav><a class="booth" href="https://nyades.booth.pm/items/9030536">Open on BOOTH ↗</a></div></header>
 <main class="wrap"><section class="card"><h1>BodyPen — Finger painting for VRChat avatars</h1><a class="booth large" href="https://nyades.booth.pm/items/9030536">Open on BOOTH ↗</a></section><section class="card"><p class="text">Paint directly on your avatar with your finger.
 
 BodyPen adds surface painting to your VRChat avatar’s body and clothing. Touch the palette near your head to choose a color, draw with your index finger, then erase part of the drawing or clear it from the menu.
@@ -70,10 +70,20 @@ Windows PC / PC VR. Requires a compatible Material Contacts client and SDK. The 
 • Target meshes with UV0 and triangle submeshes. MeshRenderer and SkinnedMeshRenderer are supported.
 
 Tested: SDK 3.10.6-beta.2 / Modular Avatar 1.19.0-alpha.2 / NDMF 1.15.0-beta.2. These are the development environment versions, not a promise of support for older stable versions. If Material Contacts is missing, enable prerelease packages and update both Base and Avatars.</p></section><section class="card"><h2>Setup and use</h2><p class="text">1. Extract the downloaded ZIP and import the unitypackage into your avatar project.
-2. Place BodyPen.prefab under the avatar, or select your avatar and use Tools → Nyades → BodyPen → Add to selected avatar.
-3. Add 1–16 target meshes to Meshes in the Inspector.
-4. Position the palette relative to the head and adjust the seven colors, brush size and eraser size. The palette follows the Head bone at build time.
-5. Build and upload through the normal VRChat SDK workflow; check the result in a compatible client.
+2. Install VRChat SDK 3.10.6 or newer (beta at the time of recording). Gesture Manager is optional.
+3. Right-click your avatar in the “Hierarchy” and choose “BodyPen” from the menu. (Alternatively: Tools → Nyades → BodyPen → Add to selected avatar.)
+4. Select the “Palette” object and move the palette to your preferred body part.
+5. Choose which bone the palette follows. The default is “Head”.
+6. Select the “BodyPen” prefab and open “Meshes”.
+7. Add the meshes you want to draw on. Start with the face mesh.
+8. You can turn off drawing on parts of a mesh. For example, “body_options” is used for facial effects; turn it off so it cannot be drawn on.
+9. To protect the eyes, enable “Mask”, choose “Black” and click the areas where you don’t want paint. Those areas turn red. Click “Edit” to leave mask editing.
+10. Add the remaining meshes: body, clothing and hair (up to 16).
+11. Under “Brush”, click “Test in Play Mode”, draw on the selected meshes and adjust the brush settings.
+12. Adjust the colors under “Color palette”.
+13. To keep changes made in Play Mode, enable “Save values to component” under “Unity Play Mode”.
+14. Under “Paint Material”, change how the paint looks, how long it stays, and its texture.
+15. You’re ready! Build and upload your avatar and start drawing.
 
 Touch the palette with an index finger to select a color or eraser, then touch a configured mesh. Use the menu for drawing permissions, Clear and Hide palette. To interact with others, also enable the relevant VRChat Contact permissions.</p></section><section class="card"><h2>Compatibility and limitations</h2><p class="text">• Tool and control parameters sync, but each client accumulates its own ink history. Late joiners do not receive previous drawings. Pixel-identical image synchronization is not provided.
 • UV seams, clothing, shaders and camera configurations can affect results; adjust the setup per avatar.
