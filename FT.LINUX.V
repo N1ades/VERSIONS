@@ -1,3 +1,3 @@
-V6.2.4
-https://github.com/N1ades/VERSIONS/releases/download/FT-Linux-V6.2.4/Nyades.FT.Linux.x86_64.AppImage
-17c01404f444224745dfeb079ec7e931dba95d370bd6f220965f40fc27d6a386
+V6.2.6
+https://github.com/N1ades/VERSIONS/releases/download/FT-Linux-V6.2.6/Nyades.FT.Linux.x86_64.AppImage
+edd39132cd7a5c065e824d7b24b50fda591ddf5e6bd9a207424c9272cb86cb03
