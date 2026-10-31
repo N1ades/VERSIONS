@@ -1,3 +1,3 @@
-V6.2.5a
-https://github.com/N1ades/VERSIONS/releases/download/FT-V6.2.5a/Nyades.FT.exe
-b0b75a3440bc490311b23ba879e826e19644fde75289ea1e8085559f4bb7bf34
+V6.2.6
+https://github.com/N1ades/VERSIONS/releases/download/FT-V6.2.6/Nyades.FT.exe
+0506750a96051209b862d7e49a8ee8617ba91aecac50758aadbfd79fe2c48fde
