@@ -132,7 +132,22 @@ To also move your head, upper body and hands, set up one of these. The virtual c
 ・Windows (ZIP): Nyades FT.exe
 ・Linux β (ZIP): AppImage</p></section>
 
-<section class="card"><h2>Changelog</h2><p class="text">■ V6.2.5 (Windows) 2026/10/31 (latest)
+<section class="card"><h2>Changelog</h2><p class="text">■ V6.2.7 (Windows) 2026/11/01 (latest)
+・The virtual camera is now on the main panel. Compared with choosing your real camera in VRChat: no need to change your Windows camera settings, the mouth no longer opens too wide, and your face stays private (VRChat only sees a virtual mask).
+・Windows 11 uses the new Nyades Virtual Camera. In VRChat open Settings › Tracking &amp; IK › Camera Tracking, turn on Enable Selfie Expression, press Change Webcam Device and choose Nyades Virtual Camera (Windows Virtual Camera). Windows 10 uses the OBS Virtual Camera as before.
+・Nyades FT and its components can be removed from Windows Settings › Apps › Installed apps.
+・New "When FT is lost" setting: Stop (neutral face, tracking off until your face returns) or Sleep (default: neutral face with closed eyes).
+・The preview shows its own FPS, and face landmarks move smoothly at your monitor's refresh rate. Layout improvements.
+・No Windows Firewall prompt with the default ports. Helper processes no longer stay running after the app closes or crashes. Lower CPU use.
+
+■ Linux V6.2.7 (Linux) 2026/11/01
+・Brings the Windows changes up to V6.2.7 to Linux, except the virtual camera and uninstall, which are Windows-only.
+
+■ V6.2.6 (Windows, Linux) 2026/10/31
+・New inference engine: CPU tracking moved from ONNX Runtime to Google's LiteRT with XNNPACK, about 1.9× faster (2.8 ms instead of 5.3 ms on Windows, 3.7 ms instead of 6.7 ms on Linux) with the same accuracy. Thanks to AmaneOjakasa for the advice.
+・Fixed "Update failed" after the V6.2.5a hotfix.
+
+■ V6.2.5 (Windows) 2026/10/31
 ・The tracker now runs natively inside the app: smaller download and faster startup.
 ・Avatar motion is smoother thanks to interpolated OSC output.
 ・The camera preview panel can be resized.

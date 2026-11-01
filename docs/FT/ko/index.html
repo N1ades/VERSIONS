@@ -132,7 +132,22 @@ Nyades FT는 Windows PC에 연결된 웹캠으로 얼굴 움직임을 읽고, OS
 ・Windows (ZIP): Nyades FT.exe
 ・Linux β (ZIP): AppImage</p></section>
 
-<section class="card"><h2>업데이트 내역</h2><p class="text">■ V6.2.5 (Windows) 2026/10/31 (최신)
+<section class="card"><h2>업데이트 내역</h2><p class="text">■ V6.2.7 (Windows) 2026/11/01 (최신)
+・가상 카메라가 메인 패널로 옮겨졌습니다. VRChat에서 실제 카메라를 고르는 것과 비교해: Windows 카메라 설정을 바꿀 필요가 없고, 입이 지나치게 크게 벌어지지 않으며, 얼굴이 비공개로 유지됩니다 (VRChat에는 가상 마스크만 보입니다).
+・Windows 11에서는 새 Nyades Virtual Camera를 사용합니다. VRChat에서 설정 › 트래킹 및 IK › 카메라 트래킹을 열고 "셀카 표현 활성화"를 켠 다음 "웹캠 장치 변경"에서 Nyades Virtual Camera (Windows Virtual Camera)를 선택하세요. Windows 10에서는 이전처럼 OBS Virtual Camera를 사용합니다.
+・Windows 설정 › 앱 › 설치된 앱에서 Nyades FT와 구성 요소를 제거할 수 있습니다.
+・새 「얼굴을 놓쳤을 때」 설정: 중지 (무표정, 얼굴이 돌아올 때까지 트래킹 꺼짐) 또는 수면 (기본값: 무표정과 감은 눈).
+・미리보기에 자체 FPS가 표시되고, 얼굴 랜드마크가 모니터 주사율로 부드럽게 움직입니다. 화면 구성 개선.
+・기본 포트에서는 Windows 방화벽 확인이 나타나지 않습니다. 앱이 종료되거나 충돌한 뒤 보조 프로세스가 남지 않습니다. CPU 사용량 감소.
+
+■ Linux V6.2.7 (Linux) 2026/11/01
+・V6.2.7까지의 Windows 버전 변경 사항을 Linux에도 반영했습니다. 가상 카메라와 제거 기능은 Windows 전용입니다.
+
+■ V6.2.6 (Windows, Linux) 2026/10/31
+・새 추론 엔진: CPU 트래킹을 ONNX Runtime에서 Google LiteRT (XNNPACK)로 옮겨 약 1.9배 빨라졌습니다 (Windows 5.3 ms → 2.8 ms, Linux 6.7 ms → 3.7 ms), 정확도는 같습니다. 조언해 주신 AmaneOjakasa님께 감사드립니다.
+・V6.2.5a 이후 「업데이트 실패」 문제를 수정했습니다.
+
+■ V6.2.5 (Windows) 2026/10/31
 ・트래커가 앱 안에서 직접 실행됩니다: 더 가벼운 용량과 더 빠른 시작.
 ・OSC 출력 보간으로 아바타 움직임이 더 부드러워졌습니다.
 ・카메라 미리보기 패널 크기를 조절할 수 있습니다.
