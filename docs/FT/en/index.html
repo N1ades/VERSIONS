@@ -65,7 +65,7 @@ Your facial expressions in VRChat, with just a webcam.
 
 Nyades FT reads your face from a webcam connected to your Windows PC and sends expression parameters directly to VRChat over OSC. It follows VRCFT parameter conventions, so it works right away with avatars already set up for face tracking. VRCFaceTracking does not need to run.
 
-Platforms: Windows 10 / 11 (x64), Linux β (x86_64 AppImage, requires WebKitGTK 4.1)
+Platforms: Windows 10 / 11 (x64), Linux (x86_64 AppImage, requires WebKitGTK 4.1)
 
 ▍Free trial and full version
 ・Free trial: try face tracking with your camera, PC and avatar before buying.
@@ -105,10 +105,12 @@ To also move your head, upper body and hands, set up one of these. The virtual c
 ▶ Option 1 — Virtual camera (recommended, experimental)
 　① Nyades FT
 　　└ Select your physical webcam as the input camera
-　　└ Settings → "Virtual camera (OBS, experimental)" → "Install &amp; enable"
+　　└ Click "Virtual camera" next to "Center gaze" (Windows asks for permission the first time)
 　② VRChat
-　　└ Settings → Tracking &amp; IK → select "OBS Virtual Camera" as the camera
+　　└ Settings › Tracking &amp; IK › Camera Tracking
 　　└ Turn on "Enable Selfie Expression"
+　　└ "Change Webcam Device" → "Nyades Virtual Camera (Windows Virtual Camera)"
+　※ On Windows 10 choose "OBS Virtual Camera". If the camera is not listed, restart VRChat.
 
 ▶ Option 2 — Share the camera
 　Use this if the virtual camera doesn't work.
@@ -126,11 +128,11 @@ To also move your head, upper body and hands, set up one of these. The virtual c
 
 <section class="card"><h2>What&#x27;s included</h2><p class="text">▍Full version
 ・Windows (ZIP): Nyades FT-Support.exe
-・Linux β (ZIP): AppImage
+・Linux (ZIP): AppImage
 
 ▍Free trial
 ・Windows (ZIP): Nyades FT.exe
-・Linux β (ZIP): AppImage</p></section>
+・Linux (ZIP): AppImage</p></section>
 
 <section class="card"><h2>Changelog</h2><p class="text">■ V6.2.7 (Windows) 2026/11/01 (latest)
 ・The virtual camera is now on the main panel. Compared with choosing your real camera in VRChat: no need to change your Windows camera settings, the mouth no longer opens too wide, and your face stays private (VRChat only sees a virtual mask).

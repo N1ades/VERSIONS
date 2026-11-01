@@ -65,7 +65,7 @@
 
 Nyades FT는 Windows PC에 연결된 웹캠으로 얼굴 움직임을 읽고, OSC를 통해 표정 파라미터를 VRChat에 직접 전송합니다. VRCFT 형식의 파라미터를 따르므로 페이스 트래킹이 설정된 아바타에서 바로 사용할 수 있습니다. VRCFaceTracking을 실행할 필요가 없습니다.
 
-지원 플랫폼: Windows 10 / 11 (x64), Linux β (x86_64 AppImage, WebKitGTK 4.1 필요)
+지원 플랫폼: Windows 10 / 11 (x64), Linux (x86_64 AppImage, WebKitGTK 4.1 필요)
 
 ▍무료 체험판과 정식 버전
 ・무료 체험판: 구매 전에 카메라, PC, 아바타 환경에서 페이스 트래킹을 확인해 보세요.
@@ -105,10 +105,12 @@ Nyades FT는 Windows PC에 연결된 웹캠으로 얼굴 움직임을 읽고, OS
 ▶ 방법 1 — 가상 카메라 (추천·실험적)
 　① Nyades FT
 　　└ 입력 카메라로 실제 웹캠을 선택
-　　└ 설정 → 「가상 카메라 (OBS, 실험적)」 → 「설치 및 활성화」
+　　└ 「시선 중앙 맞추기」 옆의 「가상 카메라」를 클릭 (처음에는 Windows가 권한을 요청합니다)
 　② VRChat
-　　└ 설정 → 트래킹 및 IK → 카메라로 「OBS Virtual Camera」 선택
-　　└ 「Selfie Expression 활성화」를 켭니다
+　　└ 설정 › 트래킹 및 IK › 카메라 트래킹
+　　└ 「셀카 표현 활성화」를 켭니다
+　　└ 「웹캠 장치 변경」 → 「Nyades Virtual Camera (Windows Virtual Camera)」
+　※ Windows 10에서는 「OBS Virtual Camera」를 선택하세요. 목록에 없으면 VRChat을 다시 시작하세요.
 
 ▶ 방법 2 — 카메라 동시 사용 허용
 　가상 카메라가 잘 동작하지 않을 때 사용하세요.
@@ -126,11 +128,11 @@ Nyades FT는 Windows PC에 연결된 웹캠으로 얼굴 움직임을 읽고, OS
 
 <section class="card"><h2>구성</h2><p class="text">▍정식 버전
 ・Windows (ZIP): Nyades FT-Support.exe
-・Linux β (ZIP): AppImage
+・Linux (ZIP): AppImage
 
 ▍무료 체험판
 ・Windows (ZIP): Nyades FT.exe
-・Linux β (ZIP): AppImage</p></section>
+・Linux (ZIP): AppImage</p></section>
 
 <section class="card"><h2>업데이트 내역</h2><p class="text">■ V6.2.7 (Windows) 2026/11/01 (최신)
 ・가상 카메라가 메인 패널로 옮겨졌습니다. VRChat에서 실제 카메라를 고르는 것과 비교해: Windows 카메라 설정을 바꿀 필요가 없고, 입이 지나치게 크게 벌어지지 않으며, 얼굴이 비공개로 유지됩니다 (VRChat에는 가상 마스크만 보입니다).
