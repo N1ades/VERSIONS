@@ -55,10 +55,42 @@
 <header class="bar"><div class="bar-inner"><div class="brand">Nyades - Stocking Pull</div><nav class="langs" aria-label="Language"><span aria-current="page">EN</span><a href="https://nyades.booth.pm/items/9219429" lang="ja" hreflang="ja">日本語</a><a href="../ko/" lang="ko" hreflang="ko">한국어</a><a href="../ru/" lang="ru" hreflang="ru">RU</a></nav><a class="booth" href="https://nyades.booth.pm/items/9219429">Open on BOOTH ↗</a></div></header>
 <main class="wrap">
 <section class="card"><h1>Nyades - Stocking Pull</h1><a class="booth large" href="https://nyades.booth.pm/items/9219429">Open on BOOTH ↗</a><p class="availability">The BOOTH listing is currently in preparation.</p></section>
-<section class="card"><h2>About Stocking Pull</h2><p class="text">Pinch the fabric, pull it, and repair it from your avatar menu.</p><p class="text">Stocking Pull is a Modular Avatar add-on for VRChat. Grab the fabric with a PhysBone and it stretches from the point you pinched as you move your hand. Pull hard enough to tear it and the tear stays when you let go.</p></section>
-<section class="card"><h2>Features</h2><ul><li>The avatar wearer and other players with grab permission can interact. Choose 1–8 simultaneous grabs. The default maximum stretch is 6 cm.</li><li>The avatar menu includes Pull, Repair, Self Pull, and Sound. Repair clears tears and cancels held pulls. Sound appears when sound effects are enabled.</li><li>Use a stocking material layered over the body, or select material slots on an existing skinned garment. Supports lilToon and Poiyomi.</li><li>Use Pull Blockers where the fabric should resist stretching. Replace the five cloth sounds for pinching, stretching, tearing, releasing, and repairing, and adjust their volume.</li></ul></section>
-<section class="card"><h2>Requirements and setup</h2><ol><li>In your avatar’s Unity project, install the VRChat Avatars SDK with Material Contacts (developed with 3.10.6), Modular Avatar, NDMF, the Nyades Shared Editor assembly, and lilToon or Poiyomi. Import the Stocking Pull unitypackage.</li><li>For a body overlay, add Stocking Pull (Modular Avatar) under your avatar. Assign the body renderer and set up a stocking texture and opacity mask that fit your avatar’s UVs.</li><li>For an existing garment, add Stocking Pull Setup to the skinned mesh, enable Use Existing Material, and select the Material Slots to use. This mode keeps the garment’s existing textures.</li><li>Set the pull regions and simultaneous grab count. Adjust blockers and sound as needed, then check the result in Unity Play Mode before building.</li></ol></section>
-<section class="card"><h2>Before buying and support</h2><p class="text">The body overlay needs a texture and mask fitted to your avatar. Grabs follow VRChat’s interaction settings. For questions or bug reports, send a BOOTH message with your Unity, SDK, and shader versions and steps to reproduce the issue.</p></section>
+<section class="card"><h2>About Stocking Pull</h2>
+<p class="text">Pinch the knee of a pair of tights or the cuff of a sleeve and move your hand. The fabric stretches from the spot you grabbed. Pull far enough and a run opens into a tear that stays when you let go. Use Repair in the avatar menu to mend it. Stocking Pull uses VRChat PhysBone Grab and installs with Modular Avatar.</p>
+</section>
+<section class="card"><h2>Features</h2>
+<h3>Grab and pull</h3>
+<p class="text">Other players can grab the fabric when your VRChat interaction settings allow it. Turn Self Pull on to grab your own outfit. Set 1–8 simultaneous grabs (default 2). The default maximum stretch is 6 cm.</p>
+<h3>Fabric and tears</h3>
+<p class="text">Adjust how far the pull spreads, how sheer the fabric becomes and how much it shines under tension. In Tear Appearance, shape the opening, frayed threads and edges, and choose how nearby tears merge. Saved tears sync to other players.</p>
+<h3>Layered outfits and protected areas</h3>
+<p class="text">Use Tear Protection to paint a UV0 mask for each mesh and protect details that should stay intact. Add overlying garments to Pull Blockers. For example, you can grab the visible part of a stocking while the fabric under a skirt stays covered.</p>
+<h3>Sounds and avatar controls</h3>
+<p class="text">Replace the sounds for a spreading run, release and repair. Pull toggles the effect. Repair clears saved tears and cancels active pulls. Enabling audio also adds Sound and Volume to the avatar menu.</p>
+<h3>Setup and performance</h3>
+<p class="text">One component can manage several skinned meshes and individual material slots. The fabric layer reuses the avatar’s triangles. Enable only the grab regions your outfit covers from a choice of 12. Performance → Measure compares the avatar’s PC performance ratings with and without Stocking Pull. The Inspector supports English, Japanese, Korean and Russian.</p>
+</section>
+<section class="card"><h2>Requirements and setup</h2>
+<h3>What you need</h3>
+<p class="text">VRChat Avatars SDK 3.10.6 or newer with Material Contacts, Modular Avatar, NDMF and the Nyades Shared Editor assembly. The tutorial uses Unity 2022.3.22f1 and Modular Avatar 1.19.0, with fabric materials set up for Poiyomi 10+ or lilToon 2.4.1+. Gesture Manager is optional for testing the interaction in Unity.</p>
+<h3>For an existing garment mesh</h3>
+<ol><li>Install the dependencies in your avatar project, then import the Stocking Pull .unitypackage.</li><li>In the Hierarchy, right-click the garment object with the Skinned Mesh Renderer. Choose Nyades → Stocking Pull → Add Component.</li><li>Open Meshes and enable the material slots where you want tears to appear. Adjust Tear Appearance and paint a Tear Protection mask if needed.</li><li>Add any overlying clothing meshes to Pull Blockers. Turn on Preview Mask to check which fabric stays covered.</li><li>Under Stocking Pull → Grab regions, select the body areas covered by the fabric. Turn on Preview Contact and adjust Contact margin until the capsules cover those areas.</li><li>Click Test in Play Mode. In the Game view, hold the left mouse button and drag the fabric. Use WASD to move or Center Camera to return to the avatar. Click Save to Component before leaving Play Mode to keep your adjustments.</li></ol>
+<h3>For tights painted on the body texture</h3>
+<p class="text">Prepare an overlay material with a tights texture and opacity mask that fit the body UVs. Add the component to the body mesh and enable only the overlay slot under Meshes. Leave skin and nail slots off. Expand the material row and adjust Shell Offset (mm) to set the gap between the tights and the body.</p>
+</section>
+<section class="card"><h2>Before you buy</h2>
+<p class="text">An existing garment can use its own textures. A body overlay needs artwork fitted to your avatar’s UVs. Check grab coverage on your avatar in Unity. More simultaneous grabs and enabled regions use more Contacts and Animator states.</p>
+</section>
+<section class="card"><h2>Changelog</h2>
+<p class="versions">v0.1.23 — Adjusted Inspector warning spacing and matched the height of each action button to its warning.<br>
+v0.1.22 — You can enable Read/Write directly from the unreadable-mesh warning. The importer applies the setting to every mesh in that model.<br>
+v0.1.21 — Inspector warnings identify selections with no detectable grab regions and point you to the relevant settings.</p>
+</section>
+<section class="card"><h2>Usage and support</h2>
+<p class="text">Use Stocking Pull on your VRChat avatars. To distribute an avatar with the effect installed, lock the setup under Bake (Optional) and include the distribution prefab, baked assets and Lock Support DLL. Keep the authoring package and restore backup in your own project. The original terms for third-party outfits, shaders and audio still apply.</p>
+<p class="text">For help, message Nyades Lab on BOOTH or Discord. Include your Unity, VRChat SDK, Stocking Pull and shader versions, plus the steps or a screenshot showing the issue.</p>
+<p><a href="https://discord.gg/Hwa8c7vn4y">Discord · Nyades Lab</a></p>
+</section>
 </main>
 </body>
 </html>
